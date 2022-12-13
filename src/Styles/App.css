@@ -1,0 +1,23 @@
+body {
+    --slack-color: rgb(67, 67, 67);
+    --slack-secondary: rgb(114, 114, 114);
+    overflow: hidden;
+}
+
+.app_body {
+    display: flex;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(37, 37, 37);
+  }
+
+::-webkit-scrollbar-thumb {
+    background: var(--slack-color);
+    border-radius: 10px;
+}

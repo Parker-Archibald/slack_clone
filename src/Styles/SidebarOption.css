@@ -1,0 +1,45 @@
+.sidebarOption {
+    display: flex;
+    font-size: 12px;
+    padding-left: 2px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.sidebarOption:hover {
+    background-color: var(--slack-secondary);
+    opacity: .9;
+}
+
+.sidebarOption_icon {
+    padding: 10px;
+    font-size: 15px !important;
+}
+
+.sidebarOption_channel {
+    padding: 5px 0;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sidebarOption_hash {
+    padding: 10px;
+    margin-right: -4vw;
+}
+
+.sidebarOption > h3 {
+    font-weight: 500;
+}
+
+.sidebar > hr {
+    margin-top: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--slack-secondary);
+}
+
+.sidebarOption_dots {
+    flex: .3
+}
