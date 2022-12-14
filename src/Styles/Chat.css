@@ -43,3 +43,11 @@
 .chat_messages {
     margin-top: 60px;
 }
+
+.chat_conatiner {
+    position: fixed;
+    bottom: 0px;
+    height: 10%;
+    width: 85%;
+    background-color: rgb(37, 37, 37);
+}

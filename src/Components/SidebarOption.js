@@ -1,9 +1,8 @@
 import React from 'react';
 import '../Styles/SidebarOption.css';
 import db from '../Config/Firebase';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-const SidebarOption = ({Icon, title, id, addChannelOption, dots}) => {
+const SidebarOption = ({Icon, title, id, addChannelOption}) => {
 
   const addChannel = () => {
     const channelName = prompt('Please enter the channel name')
@@ -15,6 +14,10 @@ const SidebarOption = ({Icon, title, id, addChannelOption, dots}) => {
     }
   }
 
+  const handleShowDots = () => {
+
+  }
+
   return (
     <div className='sidebarOption' onClick={addChannelOption && addChannel}>
       {Icon && <Icon className='sidebarOption_icon'/>}
@@ -22,7 +25,7 @@ const SidebarOption = ({Icon, title, id, addChannelOption, dots}) => {
         <h3 className='sidebarOption_channel'>
             <span className='sidebarOption_hash'>#</span> 
             {title}
-            {dots && <MoreVertIcon className='sidebarOption_dots'/>}
+            {/* {dots && <MoreVertIcon className='sidebarOption_dots'/>} */}
         </h3>}
       
     </div>

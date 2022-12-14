@@ -87,7 +87,7 @@ function Sidebar() {
       <div id='sidebar_bottomGroup'>
         <SidebarOption Icon={AddIcon} addChannelOption title='Add Channel'/>
         {channels.map(channel => (
-          <Link to={`/room/${channel.id}`} style={{'color': 'white', 'textDecoration': 'none'}}><SidebarOption title={channel.name} id={channel.id} dots={MoreVertIcon}/></Link>
+          <Link to={`/room/${channel.id}`} style={{'color': 'white', 'textDecoration': 'none'}}><SidebarOption title={channel.name} id={channel.id}/></Link>
         ))}
       </div>
       <span onClick={closeBottomGroup} id='sidebar_showLessBottom'>

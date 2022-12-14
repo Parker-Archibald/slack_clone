@@ -22,12 +22,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 
 .sidebarOption_hash {
     padding: 10px;
-    margin-right: -4vw;
 }
 
 .sidebarOption > h3 {
@@ -38,8 +36,4 @@
     margin-top: 10px;
     margin-top: 10px;
     border: 1px solid var(--slack-secondary);
-}
-
-.sidebarOption_dots {
-    flex: .3
 }

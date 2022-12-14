@@ -49,7 +49,9 @@ const Chat = () => {
 
                 ))}
             </div>
-            <ChatInput channelName={roomDetails?.name} channelId={roomId}/>
+            <div className='chat_conatiner'>
+                <ChatInput channelName={roomDetails?.name} channelId={roomId} />
+            </div>
         </div>
     )
 }
