@@ -28,9 +28,9 @@ const ChatInput = ({channelName, channelId}) => {
     return (
         <div className='chatInput'>
             <div>
-                <form className='chatInput_form'>
+                <form className='chatInput_form' onSubmit={sendMessage}>
                     <input value={input} onChange={e => setInput(e.target.value)} placeholder={`Message #${channelName?.toLowerCase()}`}/>
-                    <SendIcon type='submit' onClick={sendMessage} className='chatInput_send'>Send</SendIcon>
+                    <button type='submit'><SendIcon type='submit' className='chatInput_send'>Send</SendIcon></button>
                 </form>
             </div>
         </div>

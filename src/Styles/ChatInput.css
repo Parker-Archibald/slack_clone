@@ -18,11 +18,7 @@
 }
 
 .chatInput_send {
-    position: relative;
-    z-index: 1000;
-    cursor: pointer;
-    right: 4%;
-    top: 20px;
+    
 }
 
 @media only screen and (min-width: 1350px) {
@@ -44,4 +40,15 @@
         right: 8%;
         top: 20px;
     }
+}
+
+.chatInput > div > form > button {
+    background-color: inherit;
+    border: none;
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+    right: 4%;
+    /* top: 20px; */
+    color: white;
 }

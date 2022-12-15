@@ -27,6 +27,7 @@ const Chat = () => {
         )
 
         }, [roomId])
+        
 
     return (
         <div className='chat'>
@@ -43,7 +44,7 @@ const Chat = () => {
                     </p>
                 </div>
             </div>
-            <div className='chat_messages'>
+            <div className='chat_messages'>{console.log(roomMessages)}
                 {roomMessages?.map(({message, timestamp, user, userImage}) => (
                     <Messages message={message} timestamp={timestamp} user={user} userImage={userImage}/>
 

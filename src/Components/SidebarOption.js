@@ -14,10 +14,6 @@ const SidebarOption = ({Icon, title, id, addChannelOption}) => {
     }
   }
 
-  const handleShowDots = () => {
-
-  }
-
   return (
     <div className='sidebarOption' onClick={addChannelOption && addChannel}>
       {Icon && <Icon className='sidebarOption_icon'/>}
